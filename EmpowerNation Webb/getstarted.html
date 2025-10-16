@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started - Empowering the Nation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Empowering the Nation</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="getstarted.html" class="btn">Get Started</a></li>
+    </ul>
+  </nav>
+
+  <!-- Enrollment Form -->
+  <section class="section-light">
+    <div class="container">
+      <h2>Enroll Now</h2>
+      <form action="submit_enrollment.html" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="course">Course Interested In:</label>
+        <select id="course" name="course" required>
+          <option value="">Select a course</option>
+          <option value="gardening">Gardening & Landscaping</option>
+          <option value="domestic">Domestic Work Training</option>
+          <option value="business">Basic Business Skills</option>
+          <option value="cooking">Cooking & Catering</option>
+        </select>
+
+        <label for="reason">Why do you want to take this course?</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Explain your motivation..." required></textarea>
+
+        <button type="submit" class="btn">Submit Enrollment</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

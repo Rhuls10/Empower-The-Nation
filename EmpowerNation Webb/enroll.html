@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enroll - Empowering the Nation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Empowering the Nation</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html" class="btn">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="section-light">
+    <div class="container">
+      <h2>Enroll in a Course</h2>
+      <form id="enrollForm" class="enroll-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <select name="course" required>
+          <option value="">Select Course</option>
+          <option value="six-week">Six-Week Courses</option>
+          <option value="six-month">Six-Month Courses</option>
+          <option value="gardening">Gardening & Landscaping</option>
+          <option value="domestic">Domestic Work Training</option>
+          <option value="business">Basic Business Skills</option>
+          <option value="cooking">Cooking & Catering</option>
+        </select>
+        <button type="submit">Submit Enrollment</button>
+      </form>
+
+      <p id="thankMessage" style="display:none; color: green; font-weight: bold; margin-top:20px;">
+        Thank you! Your enrollment has been received.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    // Prevent default form submission and show a thank you message
+    document.getElementById('enrollForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop page reload
+      this.style.display = 'none'; // Hide the form
+      document.getElementById('thankMessage').style.display = 'block'; // Show thank you
+    });
+  </script>
+</body>
+</html>
